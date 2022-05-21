@@ -1,0 +1,7 @@
+@import "../../../index.css";
+
+.btn {
+  background-color: var(--white);
+  border: none;
+  border-radius: 28px;
+}
