@@ -1,4 +1,7 @@
 export type ButtonProps = {
-  width: number;
-  height: number;
+  width: number | undefined;
+  height: number | undefined;
+  bgColor?: string;
+  color?: string;
+  fontSize?: string | undefined;
 };

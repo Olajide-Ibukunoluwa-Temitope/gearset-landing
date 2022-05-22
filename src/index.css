@@ -3,6 +3,7 @@
   --secondary: #12131b;
   --tertiary: #f0faf9;
   --white: #ffffff;
+  --max-width: 1175px;
 }
 
 body {

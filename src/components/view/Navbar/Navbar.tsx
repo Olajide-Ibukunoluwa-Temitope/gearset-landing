@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../custom/Button/Button";
+import gearsetLogo from "../../../assets/images/logos/gearset_logo.svg";
 import "./styles.css";
 
 const Navbar: React.FC = () => {
@@ -7,10 +8,10 @@ const Navbar: React.FC = () => {
     <nav className="nav">
       <div className="navbar-content">
         <div>
-          <p>GEARSET</p>
+          <img src={gearsetLogo} alt="gearset logo" />
         </div>
         <div>
-          <Button width={188} height={48} />
+          <Button width={188} height={48} fontSize={"18px"} color={"#161D5B"} />
         </div>
       </div>
     </nav>

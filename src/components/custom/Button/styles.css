@@ -5,3 +5,8 @@
   border: none;
   border-radius: 28px;
 }
+
+.btn .btn_text {
+  margin: 0;
+  width: 100%;
+}

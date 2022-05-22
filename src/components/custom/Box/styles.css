@@ -1,0 +1,38 @@
+@import "../../../index.css";
+
+.box {
+  border-radius: 32px;
+  box-shadow: 0px 8px 24px rgba(22, 29, 91, 0.1),
+    0px 2px 6px rgba(22, 29, 91, 0.149277);
+  background-color: var(--white);
+  width: 380px;
+  height: 368px;
+  padding: 0 32px 32px;
+  position: relative;
+  margin-top: 136px;
+}
+
+.box .img_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -70px;
+}
+
+.box .content {
+  position: relative;
+  bottom: 30px;
+}
+
+.box .content h4 {
+  font-size: 24px;
+  color: var(--primary);
+  margin: 0 0 13px;
+  white-space: nowrap;
+}
+
+.box .content p {
+  font-size: 16px;
+  color: var(--secondary);
+  line-height: 24px;
+}
