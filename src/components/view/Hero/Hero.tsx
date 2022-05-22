@@ -2,8 +2,9 @@ import React from "react";
 import Button from "../../custom/Button/Button";
 import heroImg from "../../../assets/images/illustrations/hero.svg";
 import "./styles.css";
+import { HeroProps } from "./types";
 
-const Hero: React.FC = () => {
+const Hero: React.FC<HeroProps> = ({ onBtnClick }) => {
   return (
     <>
       <div className="hero_container">
@@ -21,6 +22,7 @@ const Hero: React.FC = () => {
                 bgColor={"#161D5B"}
                 color={"#FFFFFF"}
                 fontSize={"20px"}
+                onClick={onBtnClick}
               />
             </div>
             <div className="image_content">

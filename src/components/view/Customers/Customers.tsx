@@ -3,11 +3,27 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Box from "../../custom/Box/Box";
 import Section from "../../custom/Section/Section";
+import { ButtonGroupProps, CustomersProps } from "./types";
 import { customers, responsive } from "./data";
+import nextIcon from "../../../assets/icons/next.svg";
+import prevIcon from "../../../assets/icons/prev.svg";
 import "./styles.css";
 
-const Customers: React.FC = () => {
+const Customers: React.FC<CustomersProps> = ({ onBtnClick }) => {
   const displayCarousel = () => {
+    const ButtonGroup = ({ next, previous }: ButtonGroupProps) => {
+      return (
+        <div className="carousel_button_group">
+          <div className={"prev"} onClick={() => previous?.()}>
+            <img src={prevIcon} alt="previous" />
+          </div>
+          <div className={"next"} onClick={() => next?.()}>
+            <img src={nextIcon} alt="next" />
+          </div>
+        </div>
+      );
+    };
+
     return (
       <Carousel
         ssr={false}
@@ -15,13 +31,15 @@ const Customers: React.FC = () => {
         showDots={false}
         infinite={true}
         responsive={responsive}
-        arrows={true}
-        autoPlay={false}
-        autoPlaySpeed={5000}
+        arrows={false}
+        autoPlay={true}
+        autoPlaySpeed={6000}
         className="slider"
         keyBoardControl={true}
+        renderButtonGroupOutside={true}
+        customButtonGroup={<ButtonGroup />}
       >
-        {customers.map((customer) => (
+        {customers.map((customer, idx) => (
           <Box
             img={customer.img}
             alt={customer.alt}
@@ -31,6 +49,7 @@ const Customers: React.FC = () => {
             bottom={0}
             imgHeight={"64px"}
             imgWidth={"252px"}
+            padding="75px 0 69px"
           />
         ))}
       </Carousel>
@@ -38,11 +57,12 @@ const Customers: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="customers_section">
       <Section
         title="Setting the standard for Salesforce DevOps"
         subText="Founded in 2015 by DevOps experts, Gearset is designed to help every Salesforce team apply DevOps best practices to their development and release process."
         btnText="Learn More"
+        onClick={onBtnClick}
         btnBgColor="#161D5B"
         btnTextColor="#FFFFFF"
         btnWidth={233}

@@ -8,11 +8,17 @@ const Button: React.FC<ButtonProps> = ({
   bgColor,
   color,
   fontSize,
+  btnText,
+  onClick,
 }) => {
   return (
-    <button className="btn" style={{ width, height, backgroundColor: bgColor }}>
+    <button
+      className="btn"
+      style={{ width, height, backgroundColor: bgColor }}
+      onClick={() => onClick?.()}
+    >
       <p className="btn_text" style={{ fontSize, color }}>
-        LEARN MORE
+        {btnText ? btnText : "LEARN MORE"}
       </p>
     </button>
   );

@@ -16,10 +16,13 @@ const Section: React.FC<SectionProps> = (props) => {
             bgColor={props?.btnBgColor}
             color={props?.btnTextColor}
             fontSize={props?.btnFontSize}
+            onClick={props?.onClick}
           />
         )}
       </div>
-      <div className="child_container" style={{width: props.width}}>{props.child}</div>
+      <div className="child_container" style={{ width: props.width }}>
+        {props.child}
+      </div>
     </div>
   );
 };

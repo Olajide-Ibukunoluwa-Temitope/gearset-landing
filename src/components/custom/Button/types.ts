@@ -4,4 +4,6 @@ export type ButtonProps = {
   bgColor?: string;
   color?: string;
   fontSize?: string | undefined;
+  btnText?: string;
+  onClick?: () => void;
 };

@@ -1,9 +1,12 @@
 @import "../../../index.css";
 
-.section_container {
+.learn_more_section {
+  height: 440px;
+  width: 100%;
   display: flex;
+  background-color: var(--tertiary);
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .title_section {
@@ -25,22 +28,11 @@
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  margin: 0 0 32px;
+  margin: 0 0 48px;
   color: var(--secondary);
 }
 
-.child_container {
-  display: flex;
-  gap: 20px;
-  width: var(--max-width);
-  margin: 0 130px 96px;
-}
-
 @media only screen and (max-width: 850px) {
-  .about_img img {
-    width: 100%;
-  }
-
   .title_section h2 {
     font-size: 32px;
     width: 416px;
@@ -50,11 +42,5 @@
     width: 416px;
     font-size: 20px;
     line-height: 32px;
-  }
-
-  .child_container {
-    flex-direction: column;
-    width: 100%;
-    margin: 0 32px 96px;
   }
 }

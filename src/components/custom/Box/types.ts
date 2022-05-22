@@ -7,4 +7,5 @@ export type BoxProps = {
   bottom?: string | number;
   imgHeight?: string;
   imgWidth?: string;
+  padding?: string;
 };

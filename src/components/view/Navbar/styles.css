@@ -5,13 +5,31 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 9999;
+  transition: ease 0.5s;
 }
 
-.navbar-content {
+.nav_shadow {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  background-color: var(--white);
+  transition: ease 0.5s;
+}
+
+.navbar_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 130px;
   height: 96px;
   width: var(--max-width);
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar_content {
+    margin: 0 32px;
+  }
 }

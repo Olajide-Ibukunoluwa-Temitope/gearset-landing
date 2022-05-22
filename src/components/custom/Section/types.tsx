@@ -10,5 +10,6 @@ export type SectionProps = {
   btnBgColor?: string;
   btnFontSize?: string;
   width?: string;
+  onClick?: () => void;
   child?: React.ReactNode;
 };

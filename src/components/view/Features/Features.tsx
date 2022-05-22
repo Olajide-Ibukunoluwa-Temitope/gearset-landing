@@ -2,11 +2,14 @@ import React from "react";
 import Box from "../../custom/Box/Box";
 import Section from "../../custom/Section/Section";
 import { features } from "./data";
+import "./styles.css";
 
 const Features: React.FC = () => {
   const displayFeatures = () => {
-    return features.map(({ img, alt, title, subText }) => (
-      <Box img={img} alt={alt} title={title} subText={subText} />
+    return features.map(({ img, alt, title, subText }, index) => (
+      <div className="box_container" key={index}>
+        <Box img={img} alt={alt} title={title} subText={subText} />
+      </div>
     ));
   };
 

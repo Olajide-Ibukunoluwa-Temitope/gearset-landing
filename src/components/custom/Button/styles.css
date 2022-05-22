@@ -4,6 +4,7 @@
   background-color: var(--white);
   border: none;
   border-radius: 28px;
+  cursor: pointer;
 }
 
 .btn .btn_text {
