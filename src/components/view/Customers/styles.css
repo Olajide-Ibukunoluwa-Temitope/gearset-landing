@@ -6,7 +6,7 @@
 }
 
 .slider li {
-  width: 380px !important;
+  max-width: 380px;
   margin: 0 6px;
 }
 
@@ -35,5 +35,24 @@
 @media only screen and (max-width: 850px) {
   .slider {
     width: 100%;
+  }
+
+  .slider li {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .carousel_box {
+    padding: 0 76px;
+  }
+
+  .next {
+    cursor: pointer;
+    margin-right: 25px;
+  }
+
+  .prev {
+    cursor: pointer;
+    margin-left: 25px;
   }
 }

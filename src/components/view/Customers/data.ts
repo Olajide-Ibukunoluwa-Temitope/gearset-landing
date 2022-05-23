@@ -6,7 +6,7 @@ import landg from "../../../assets/images/logos/landg.svg";
 import xometry from "../../../assets/images/logos/xometry.svg";
 
 export const responsive = {
-  superLargeDesktop: {
+  largeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
     items: 4,
   },

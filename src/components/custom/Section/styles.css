@@ -37,10 +37,6 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .about_img img {
-    width: 100%;
-  }
-
   .title_section h2 {
     font-size: 32px;
     width: 416px;
@@ -50,11 +46,14 @@
     width: 416px;
     font-size: 20px;
     line-height: 32px;
+    margin: 0 0 24px;
   }
 
   .child_container {
     flex-direction: column;
     width: 100%;
     margin: 0 32px 96px;
+    align-items: center;
+    gap: 60px;
   }
 }
