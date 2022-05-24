@@ -33,7 +33,7 @@
   color: var(--secondary);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
   .about_section {
     height: auto;
     margin-top: 26px;
@@ -52,7 +52,7 @@
   }
 
   .about_text {
-    width: 416px;
+    width: 100%;
   }
 
   .about_text h2 {
@@ -68,6 +68,8 @@
     line-height: 32px;
     margin: 0;
     color: var(--secondary);
+    font-weight: var(--font-weight-regular);
     text-align: center;
+    padding: 0 32px;
   }
 }

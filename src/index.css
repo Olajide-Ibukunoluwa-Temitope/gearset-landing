@@ -2,8 +2,13 @@
   --primary: #161d5b;
   --secondary: #12131b;
   --tertiary: #f0faf9;
+  --alternate: #1BFBE8;
   --white: #ffffff;
   --max-width: 1175px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 html {
@@ -12,11 +17,19 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: sofia-pro-soft, sans-serif;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: sofia-pro-soft, sans-serif;
+}
+
+h2 {
+  font-family: var(--font-weight-bold);
 }
 
 code {

@@ -34,11 +34,11 @@ const Navbar: React.FC<NavbarProps> = ({ onBtnClick }) => {
         </div>
         <div>
           <Button
-            width={188}
+            width={180}
             height={48}
             fontSize={"18px"}
-            color={`${shadowMenu ? "#FFFFFF" : "#161D5B"}`}
-            bgColor={`${shadowMenu ? "#161D5B" : "#FFFFFF"}`}
+            color={`#161D5B`}
+            bgColor={`${shadowMenu ? "#1BFBE8" : "#FFFFFF"}`}
             onClick={onBtnClick}
           />
         </div>

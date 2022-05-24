@@ -28,8 +28,13 @@
   width: var(--max-width);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
   .navbar_content {
     margin: 0 32px;
+    width: 100%;
+  }
+
+  .navbar_content img {
+    width: 130px;
   }
 }

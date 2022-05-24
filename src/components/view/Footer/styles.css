@@ -10,5 +10,6 @@
 }
 
 .footer p {
+  font-weight: var(--font-weight-regular);
   color: var(--secondary);
 }

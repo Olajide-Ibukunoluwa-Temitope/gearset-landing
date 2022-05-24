@@ -6,9 +6,9 @@ const LearnMore: React.FC = () => {
   const handleClick = () => (window.location.href = "mailto:team@gearset.com");
   return (
     <div className="learn_more_section">
-      <div className="title_section">
+      <div className="title_container">
         <h2>Learn More</h2>
-        <p>
+        <p className="subtext">
           Learn how to deploy faster, ship fewer bugs and release more often.
           Join our weekly 30-minute demo with product experts who will showcase
           key Gearset features.

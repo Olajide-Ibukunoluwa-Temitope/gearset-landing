@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./App.css";
 import About from "./components/view/About/About";
 import Customers from "./components/view/Customers/Customers";
 import Features from "./components/view/Features/Features";

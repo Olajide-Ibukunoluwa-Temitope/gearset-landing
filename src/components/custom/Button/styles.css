@@ -10,4 +10,6 @@
 .btn .btn_text {
   margin: 0;
   width: 100%;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
 }

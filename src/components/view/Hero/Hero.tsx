@@ -30,9 +30,7 @@ const Hero: React.FC<HeroProps> = ({ onBtnClick }) => {
             </div>
           </div>
         </div>
-        {/* <div className="hero2"></div> */}
       </div>
-      {/* <div className="hero2"></div> */}
     </>
   );
 };

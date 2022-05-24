@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className="btn"
-      style={{ width, height, backgroundColor: bgColor }}
+      style={{ width, height, backgroundColor: bgColor, fontSize, color }}
       onClick={() => onClick?.()}
     >
       <p className="btn_text" style={{ fontSize, color }}>

@@ -25,18 +25,29 @@
 .box .content h4 {
   font-size: 24px;
   color: var(--primary);
+  font-weight: var(--font-weight-bold);
   margin: 0 0 13px;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .box .content p {
   font-size: 16px;
+  font-weight: var(--font-weight-regular);
   color: var(--secondary);
   line-height: 24px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
   .box {
     width: auto;
+    height: 100%;
+  }
+
+  .box .content h4 {
+    white-space: wrap;
+  }
+
+  .box .content {
+    bottom: 48px;
   }
 }

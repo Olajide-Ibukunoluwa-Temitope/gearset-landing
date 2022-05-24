@@ -70,6 +70,7 @@ const Customers: React.FC<CustomersProps> = ({ onBtnClick }) => {
         btnTextColor="#FFFFFF"
         btnWidth={233}
         btnHeight={56}
+        btnFontSize={"20px"}
         width={"100%"}
         child={displayCarousel()}
       />

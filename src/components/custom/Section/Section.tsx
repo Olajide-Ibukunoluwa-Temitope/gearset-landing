@@ -8,7 +8,7 @@ const Section: React.FC<SectionProps> = (props) => {
     <div className="section_container">
       <div className="title_section">
         <h2>{props.title}</h2>
-        <p>{props.subText}</p>
+        <p className="subtext">{props.subText}</p>
         {props.btnText && (
           <Button
             width={props?.btnWidth}
