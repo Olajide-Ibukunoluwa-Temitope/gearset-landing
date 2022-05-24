@@ -17,9 +17,7 @@ const Button: React.FC<ButtonProps> = ({
       style={{ width, height, backgroundColor: bgColor, fontSize, color }}
       onClick={() => onClick?.()}
     >
-      <p className="btn_text" style={{ fontSize, color }}>
-        {btnText ? btnText : "LEARN MORE"}
-      </p>
+      <p className="btn_text">{btnText ? btnText : "LEARN MORE"}</p>
     </button>
   );
 };

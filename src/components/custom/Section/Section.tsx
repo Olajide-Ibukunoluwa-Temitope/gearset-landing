@@ -20,9 +20,7 @@ const Section: React.FC<SectionProps> = (props) => {
           />
         )}
       </div>
-      <div className="child_container" style={{ width: props.width }}>
-        {props.child}
-      </div>
+      <div className="child_container">{props.child}</div>
     </div>
   );
 };

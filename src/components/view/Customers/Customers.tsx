@@ -47,11 +47,8 @@ const Customers: React.FC<CustomersProps> = ({ onBtnClick }) => {
               alt={customer.alt}
               title={customer.title}
               subText={customer.subText}
-              top={0}
-              bottom={0}
               imgHeight={"64px"}
               imgWidth={"252px"}
-              padding="75px 0 69px"
             />
           </div>
         ))}

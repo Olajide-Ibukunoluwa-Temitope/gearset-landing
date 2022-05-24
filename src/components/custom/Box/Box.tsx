@@ -15,10 +15,10 @@ const Box: React.FC<BoxProps> = ({
 }) => {
   return (
     <div className="box">
-      <div className="img_container" style={{ top, padding: props.padding }}>
+      <div className="img_container">
         <img src={img} alt={alt} width={imgWidth} height={imgHeight} />
       </div>
-      <div className="content" style={{ bottom }}>
+      <div className="content">
         <h4>{title}</h4>
         <p>{subText}</p>
       </div>
