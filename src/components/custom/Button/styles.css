@@ -1,0 +1,15 @@
+@import "../../../index.css";
+
+.btn {
+  background-color: var(--white);
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.btn .btn_text {
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+}

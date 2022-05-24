@@ -1,0 +1,13 @@
+.box_container {
+  width: 380px;
+  height: 368px;
+  position: relative;
+  margin-top: 136px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .box_container {
+    width: 100%;
+    margin-top: 74px;
+  }
+}
